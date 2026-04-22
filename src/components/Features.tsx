@@ -49,19 +49,16 @@ export function UseCases() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {[
             {
-              role: 'Analysts & Associates',
               title: 'Accelerate Diligence',
               desc: 'Cut down manual data entry and "file hunting" by 80%. Generate comparison tables across ten portfolio companies in seconds.'
             },
             {
-              role: 'Partners & MDs',
               title: 'Instant Insight',
               desc: 'Ask direct questions about portfolio exposure or historic deal terms and get synthesized answers on your mobile device.'
             }
           ].map((useCase) => (
             <div key={useCase.title} className="group rounded-card border border-zinc-800 bg-deep-slate p-8 transition-colors hover:border-ember-orange/50">
-              <span className="font-mono text-[10px] uppercase tracking-widest text-ember-orange">{useCase.role}</span>
-              <h3 className="mt-2 mb-4 text-2xl font-serif text-white tracking-tight">{useCase.title}</h3>
+              <h3 className="mb-4 text-2xl font-serif text-white tracking-tight">{useCase.title}</h3>
               <p className="mb-6 text-zinc-400 font-sans leading-relaxed">{useCase.desc}</p>
               <div className="flex items-center gap-2 text-ember-orange font-medium cursor-pointer">
                 <span>Learn more</span>
@@ -89,7 +86,6 @@ export function SecuritySection() {
     <section className="bg-background py-24 px-6">
       <div className="mx-auto max-w-7xl flex flex-col lg:flex-row gap-16 items-center">
         <div className="lg:w-1/2 space-y-6">
-          <span className="font-mono text-xs text-ember-orange uppercase tracking-widest">Enterprise Ready</span>
           <h2 className="text-4xl md:text-5xl font-serif text-white leading-tight">Your data is yours. Period.</h2>
           <p className="text-xl text-zinc-400 font-sans max-w-xl">
             Ember is built with the highest standards of financial security. We never train on your private deal data.

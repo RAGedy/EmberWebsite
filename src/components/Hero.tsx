@@ -49,14 +49,11 @@ export function Hero() {
             transition={{ duration: 0.6 }}
             className="flex flex-col space-y-8"
           >
-            <span className="font-mono text-xs uppercase tracking-widest text-ember-orange">
-              Private Equity & VC Intelligence
-            </span>
             <h1 className="text-5xl md:text-7xl leading-[1.1] font-serif text-white">
-              Search every spreadsheet, memo, and deck like it's one system
+              Never lose a document again
             </h1>
             <p className="max-w-xl text-lg text-zinc-400 font-sans">
-              Ember is the intelligence layer for private equity and venture capital. Turn fragmented files into an institutional brain with agentic retrieval and source-cited synthesis.
+              Ember reads every drive your firm touches and turns it into an intelligent, cited answer engine. Your team asks questions the way they ask colleagues. Ember answers with sources.
             </p>
             <div className="flex flex-wrap gap-4 pt-4 text-white">
               <button className="rounded-full bg-ember-orange px-8 py-4 font-sans font-semibold text-black transition-all hover:bg-orange-400 active:scale-95 shadow-lg shadow-ember-orange/20">

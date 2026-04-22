@@ -8,22 +8,39 @@ import { FolderX, Rows3, Hourglass, Check } from 'lucide-react';
 
 export function TrustBand() {
   const partners = [
-    { name: 'Duke Endowment', style: 'italic font-bold' },
-    { name: 'DIG Impact', style: 'font-bold' },
-    { name: 'TEXAS INSTRUMENTS', style: 'font-semibold uppercase tracking-tighter' },
-    { name: 'INTEL', style: 'font-bold uppercase' }
+    {
+      name: 'Duke Endowment',
+      logo: new URL('../assets/logos/dukeendowment_light.png', import.meta.url).href,
+      className: 'max-h-14 max-w-56'
+    },
+    {
+      name: 'DIIG',
+      logo: new URL('../assets/logos/DIIG.png', import.meta.url).href,
+      className: 'max-h-14 max-w-48'
+    },
+    {
+      name: 'Sapien Labs',
+      logo: new URL('../assets/logos/sapien_labs.png', import.meta.url).href,
+      className: 'max-h-12 max-w-44'
+    },
+    {
+      name: 'WSU',
+      logo: new URL('../assets/logos/WSU.png', import.meta.url).href,
+      className: 'max-h-12 max-w-44'
+    }
   ];
 
   return (
     <section className="border-y border-zinc-900 bg-deep-dark py-12">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid grid-cols-2 lg:grid-cols-5 items-center gap-8 opacity-40 grayscale hover:opacity-80 transition-all duration-500">
-          <div className="text-center font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500 col-span-2 lg:col-span-1">
-            Active Pilots At
-          </div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 items-center gap-8">
           {partners.map((partner) => (
-            <div key={partner.name} className="flex justify-center text-xl text-white font-serif text-center">
-              <span className={partner.style}>{partner.name}</span>
+            <div key={partner.name} className="flex h-16 items-center justify-center">
+              <img
+                src={partner.logo}
+                alt={partner.name}
+                className={`h-auto w-auto object-contain ${partner.className}`}
+              />
             </div>
           ))}
         </div>
@@ -55,9 +72,6 @@ export function ProblemSection() {
     <section className="bg-background py-24 px-6">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16 space-y-4">
-          <span className="font-mono text-xs text-ember-orange uppercase tracking-widest">
-            The Knowledge Burial Problem
-          </span>
           <h2 className="text-4xl md:text-5xl font-serif text-white max-w-3xl mx-auto leading-tight">
             Private Equity's greatest asset is its data. It's also its hardest to find.
           </h2>
@@ -92,9 +106,6 @@ export function SolutionSection() {
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
-            <span className="font-mono text-xs text-ember-orange uppercase tracking-widest">
-              The Intelligence Layer
-            </span>
             <h2 className="text-4xl md:text-6xl font-serif text-white leading-tight">
               From Retrieval to Reasoning
             </h2>
