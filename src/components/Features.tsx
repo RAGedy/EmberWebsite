@@ -37,7 +37,7 @@ export function CapabilitiesGrid() {
             <span aria-hidden="true" className="invisible">
               Enterprise
             </span>
-            <span className="absolute inset-0 overflow-hidden">
+            <span className="absolute left-0 right-0 top-0 bottom-[-0.2em] overflow-hidden">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={highStakesWords[activeWordIndex]}
