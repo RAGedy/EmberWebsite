@@ -14,7 +14,7 @@ export function Navbar() {
         </div>
         
         <div className="hidden items-center gap-10 md:flex">
-          {['Platform', 'Use Cases', 'Security', 'Pricing'].map((item) => (
+          {['Platform', 'Use Cases', 'Security'].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase().replace(' ', '-')}`}
@@ -26,10 +26,7 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-6">
-          <button className="font-serif text-sm text-zinc-400 transition-colors hover:text-white">
-            Log In
-          </button>
-          <button className="rounded-full bg-ember-orange px-6 py-2 font-serif text-sm font-semibold text-black transition-all hover:bg-orange-400 active:scale-95">
+          <button className="rounded-full bg-ember-orange px-6 py-2 font-serif text-sm font-semibold text-black transition-all hover:brightness-110 active:scale-95">
             Book a Demo
           </button>
         </div>
@@ -50,13 +47,13 @@ export function Hero() {
             className="flex flex-col space-y-8"
           >
             <h1 className="text-5xl md:text-7xl leading-[1.1] font-serif text-white">
-              Never lose a document again
+              Never lose a document again.
             </h1>
             <p className="max-w-xl text-lg text-zinc-400 font-sans">
-              Ember reads every drive your firm touches and turns it into an intelligent, cited answer engine. Your team asks questions the way they ask colleagues. Ember answers with sources.
+              Ember reads every drive your firm touches and turns it into an intelligent, cited answer engine. Your team asks questions the way they ask colleagues; Ember answers with sources.
             </p>
             <div className="flex flex-wrap gap-4 pt-4 text-white">
-              <button className="rounded-full bg-ember-orange px-8 py-4 font-sans font-semibold text-black transition-all hover:bg-orange-400 active:scale-95 shadow-lg shadow-ember-orange/20">
+              <button className="rounded-full bg-ember-orange px-8 py-4 font-sans font-semibold text-black transition-all hover:brightness-110 active:scale-95 shadow-lg shadow-ember-orange/20">
                 Book a Demo
               </button>
               <button className="flex items-center gap-2 rounded-full border border-border-cool px-8 py-4 font-sans font-semibold transition-all hover:bg-white/5 active:scale-95">

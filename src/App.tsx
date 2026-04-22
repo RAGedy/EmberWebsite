@@ -5,8 +5,8 @@
 
 import { Navbar, Hero } from './components/Hero';
 import { TrustBand, ProblemSection, SolutionSection } from './components/Sections';
-import { CapabilitiesGrid, UseCases, SecuritySection } from './components/Features';
-import { DeploymentSteps, PricingSection, FinalCTA, Footer } from './components/Footer';
+import { CapabilitiesGrid, SecuritySection } from './components/Features';
+import { FinalCTA, Footer } from './components/Footer';
 
 export default function App() {
   return (
@@ -18,10 +18,7 @@ export default function App() {
         <ProblemSection />
         <SolutionSection />
         <CapabilitiesGrid />
-        <UseCases />
         <SecuritySection />
-        <DeploymentSteps />
-        <PricingSection />
         <FinalCTA />
       </main>
       <Footer />

@@ -59,7 +59,7 @@ export function ProblemSection() {
     {
       icon: Rows3,
       title: 'Siloed Spreadsheets',
-      desc: 'The associate who built the model left two years ago. No one knows which tab has the underwriting bridge.'
+      desc: 'The associate who built the model left two years ago. No one really understands it anymore.'
     },
     {
       icon: Hourglass,
@@ -73,7 +73,8 @@ export function ProblemSection() {
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-serif text-white max-w-3xl mx-auto leading-tight">
-            Private Equity's greatest asset is its data. It's also its hardest to find.
+            Employees spend 20% of their work week searching for information.{' '}
+            <span className="text-ember-orange">Ember</span> reclaims 416 hours per employee per year.
           </h2>
         </div>
         
@@ -107,11 +108,12 @@ export function SolutionSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <h2 className="text-4xl md:text-6xl font-serif text-white leading-tight">
-              From Retrieval to Reasoning
+              Your knowledge, unburied
             </h2>
             <div className="space-y-6">
               {[
                 'Connect your CRM, SharePoint, and Cloud Storage in minutes.',
+                'Ask questions just like a colleague and receive cited answers from every connected document.',
                 'Graph RAG technology maps relationships across distinct asset classes.',
                 'Source-cited answers ensure every claim is backed by a document.'
               ].map((text) => (

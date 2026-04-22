@@ -6,12 +6,12 @@
   --font-serif: "Newsreader", "Georgia", serif;
   --font-mono: "Space Grotesk", ui-monospace, SFMono-Regular, monospace;
 
-  --color-ember-orange: #FF8C00;
+  --color-ember-orange: #fe4d00;
   --color-background: #121212;
   --color-deep-slate: #1A1A1A;
   --color-deep-dark: #0a0a0a;
   --color-border-cool: #333333;
-  --color-hero-purple: #1a0f00;
+  --color-hero-purple: #1a0800;
 
   --radius-card: 22px;
 }
@@ -26,7 +26,7 @@
 }
 
 .hero-gradient {
-  background: radial-gradient(circle at top right, #3d2100, #1a1a1a, #121212);
+  background: radial-gradient(circle at top right, #3d1200, #1a1a1a, #121212);
 }
 
 .nav-blur {
