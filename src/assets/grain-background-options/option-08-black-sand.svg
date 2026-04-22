@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="base" cx="78%" cy="18%" r="78%">
+      <stop offset="0%" stop-color="#fe4d00"/>
+      <stop offset="16%" stop-color="#9f2a00"/>
+      <stop offset="46%" stop-color="#160807"/>
+      <stop offset="100%" stop-color="#000"/>
+    </radialGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#000"/>
+      <stop offset="44%" stop-color="#000" stop-opacity=".42"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="grain" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="1.55" numOctaves="2" seed="88"/>
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="0 .08 .24 .5 .9"/>
+        <feFuncG type="table" tableValues="0 .02 .06 .14 .32"/>
+        <feFuncB type="table" tableValues="0 0 .01 .03 .07"/>
+        <feFuncA type="discrete" tableValues=".35 .6 .9 1"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#base)"/>
+  <rect width="1600" height="900" fill="url(#shade)"/>
+  <rect width="1600" height="900" filter="url(#grain)" opacity=".78" style="mix-blend-mode:multiply"/>
+  <rect width="1600" height="900" filter="url(#grain)" opacity=".32" style="mix-blend-mode:screen"/>
+</svg>

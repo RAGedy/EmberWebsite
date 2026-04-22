@@ -94,7 +94,7 @@ export function SecuritySection() {
   ];
 
   return (
-    <section className="bg-background py-24 px-6">
+    <section className="grain-bottom-ember py-24 px-6">
       <div className="mx-auto max-w-7xl">
         <h2 className="mx-auto max-w-4xl text-center text-4xl font-semibold leading-tight tracking-tight text-white md:text-6xl">
           Secure, sovereign, customizable

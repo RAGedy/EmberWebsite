@@ -29,6 +29,20 @@
   background: radial-gradient(circle at top right, #3d1200, #1a1a1a, #121212);
 }
 
+.grain-black-sand {
+  background-image: url("./assets/grain-background-options/option-08-black-sand.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grain-bottom-ember {
+  background-image: url("./assets/grain-background-options/option-08f-black-sand-bottom-ember.svg");
+  background-position: center 72%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .nav-blur {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);

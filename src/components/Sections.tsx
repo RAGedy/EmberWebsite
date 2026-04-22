@@ -69,7 +69,7 @@ export function ProblemSection() {
   ];
 
   return (
-    <section className="bg-background py-24 px-6">
+    <section className="grain-black-sand py-24 px-6">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16 space-y-4">
           <h2 className="mx-auto max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-white md:text-5xl">
