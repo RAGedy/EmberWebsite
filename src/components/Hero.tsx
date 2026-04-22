@@ -10,7 +10,7 @@ export function Navbar() {
     <nav className="fixed top-0 z-50 w-full border-b border-white/5 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <div className="flex items-center gap-2">
-          <div className="text-2xl font-serif font-bold text-ember-orange">Ember</div>
+          <div className="text-2xl font-semibold text-ember-orange">Ember</div>
         </div>
         
         <div className="hidden items-center gap-10 md:flex">
@@ -18,7 +18,7 @@ export function Navbar() {
             <a
               key={item}
               href={`#${item.toLowerCase().replace(' ', '-')}`}
-              className="font-serif text-sm text-zinc-400 transition-colors hover:text-ember-orange"
+              className="text-sm font-medium text-zinc-400 transition-colors hover:text-ember-orange"
             >
               {item}
             </a>
@@ -26,7 +26,7 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-6">
-          <button className="rounded-full bg-ember-orange px-6 py-2 font-serif text-sm font-semibold text-black transition-all hover:brightness-110 active:scale-95">
+          <button className="rounded-full bg-ember-orange px-6 py-2 text-sm font-semibold text-black transition-all hover:brightness-110 active:scale-95">
             Book a Demo
           </button>
         </div>
@@ -46,17 +46,17 @@ export function Hero() {
             transition={{ duration: 0.6 }}
             className="flex flex-col space-y-8"
           >
-            <h1 className="text-5xl md:text-7xl leading-[1.1] font-serif text-white">
+            <h1 className="text-5xl md:text-7xl leading-[1.05] font-semibold tracking-tight text-white">
               Never lose a document again.
             </h1>
-            <p className="max-w-xl text-lg text-zinc-400 font-sans">
+            <p className="max-w-xl text-lg leading-relaxed text-zinc-400">
               Ember reads every drive your firm touches and turns it into an intelligent, cited answer engine. Your team asks questions the way they ask colleagues; Ember answers with sources.
             </p>
             <div className="flex flex-wrap gap-4 pt-4 text-white">
-              <button className="rounded-full bg-ember-orange px-8 py-4 font-sans font-semibold text-black transition-all hover:brightness-110 active:scale-95 shadow-lg shadow-ember-orange/20">
+              <button className="rounded-full bg-ember-orange px-8 py-4 font-semibold text-black transition-all hover:brightness-110 active:scale-95 shadow-lg shadow-ember-orange/20">
                 Book a Demo
               </button>
-              <button className="flex items-center gap-2 rounded-full border border-border-cool px-8 py-4 font-sans font-semibold transition-all hover:bg-white/5 active:scale-95">
+              <button className="flex items-center gap-2 rounded-full border border-border-cool px-8 py-4 font-semibold transition-all hover:bg-white/5 active:scale-95">
                 See How It Works
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
@@ -94,7 +94,7 @@ export function Hero() {
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-[10px] font-bold uppercase tracking-tighter text-white">Source Verified</span>
+                  <span className="text-[10px] font-semibold uppercase text-white">Source Verified</span>
                 </div>
                 <p className="text-[10px] text-zinc-400">Referenced in: 2023_Q3_Underwriting_Memo.pdf (p.14)</p>
               </div>

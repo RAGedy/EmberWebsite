@@ -72,7 +72,7 @@ export function ProblemSection() {
     <section className="bg-background py-24 px-6">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-serif text-white max-w-3xl mx-auto leading-tight">
+          <h2 className="mx-auto max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-white md:text-5xl">
             Employees spend 20% of their work week searching for information.{' '}
             <span className="text-ember-orange">Ember</span> reclaims 416 hours per employee per year.
           </h2>
@@ -91,8 +91,8 @@ export function ProblemSection() {
               <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-zinc-900 text-ember-orange transition-colors group-hover:bg-ember-orange group-hover:text-black">
                 <prob.icon className="h-6 w-6" />
               </div>
-              <h3 className="mb-4 text-xl font-serif text-white">{prob.title}</h3>
-              <p className="text-zinc-400 font-sans leading-relaxed">{prob.desc}</p>
+              <h3 className="mb-4 text-xl font-semibold text-white">{prob.title}</h3>
+              <p className="leading-relaxed text-zinc-400">{prob.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -107,7 +107,7 @@ export function SolutionSection() {
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
-            <h2 className="text-4xl md:text-6xl font-serif text-white leading-tight">
+            <h2 className="text-4xl font-semibold leading-tight tracking-tight text-white md:text-6xl">
               Your knowledge, unburied
             </h2>
             <div className="space-y-6">

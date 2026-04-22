@@ -31,7 +31,7 @@ export function CapabilitiesGrid() {
   return (
     <section className="bg-background py-24 px-6">
       <div className="mx-auto max-w-7xl">
-        <h2 className="text-center text-4xl md:text-5xl font-serif text-white mb-16">
+        <h2 className="mb-16 text-center text-4xl font-semibold tracking-tight text-white md:text-5xl">
           Built for High-Stakes{' '}
           <span className="relative inline-block w-[11ch] align-baseline text-left text-ember-orange">
             <span aria-hidden="true" className="invisible">
@@ -64,8 +64,8 @@ export function CapabilitiesGrid() {
               className="group rounded-card border border-zinc-800 bg-deep-slate p-8 hover:bg-black/40 transition-colors"
             >
               <cap.icon className="h-8 w-8 text-ember-orange mb-4" />
-              <h3 className="mb-2 text-xl font-serif text-white">{cap.title}</h3>
-              <p className="text-zinc-400 font-sans leading-relaxed">{cap.desc}</p>
+              <h3 className="mb-2 text-xl font-semibold text-white">{cap.title}</h3>
+              <p className="leading-relaxed text-zinc-400">{cap.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -96,7 +96,7 @@ export function SecuritySection() {
   return (
     <section className="bg-background py-24 px-6">
       <div className="mx-auto max-w-7xl">
-        <h2 className="mx-auto max-w-4xl text-center text-4xl md:text-6xl font-serif text-white leading-tight">
+        <h2 className="mx-auto max-w-4xl text-center text-4xl font-semibold leading-tight tracking-tight text-white md:text-6xl">
           Secure, sovereign, customizable
         </h2>
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -105,8 +105,8 @@ export function SecuritySection() {
               <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-ember-orange/15 text-ember-orange">
                 <pillar.icon className="h-7 w-7" />
               </div>
-              <h3 className="mb-4 text-2xl font-serif text-white">{pillar.title}</h3>
-              <p className="text-zinc-400 font-sans leading-relaxed">{pillar.desc}</p>
+              <h3 className="mb-4 text-2xl font-semibold text-white">{pillar.title}</h3>
+              <p className="leading-relaxed text-zinc-400">{pillar.desc}</p>
             </div>
           ))}
         </div>
